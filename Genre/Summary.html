@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Sarangi Papers - Genre </title>
+        <style>
+            #container{
+            }
+
+            .paper{
+                    border: 1px solid blue;
+                    font-family: verdana;
+                    font-size: 1.0em;
+                    white-space: pre-wrap;
+            }
+            .paper b{
+                    font-size:0.8em;
+            }
+    
+        </style>
+    </head>
+
+    <body>
+    <div id="container">
+
+            <!-- Form template
+            <div class="paper" id="form">
+                    <b>Paper Code:</b>
+                    <b>Title:</b>
+                    <b>Author(s):</b> 
+                    <b>Date:</b>
+                    <b>Pages:</b>
+                    <b>Data Source:</b>
+                    <b>Algorithms used:</b>
+                    <b>Formality rating:</b>
+                    <b>Interest rating:</b>
+                    <b>Genre:</b>
+
+                    <b>Intro notes:</b>
+                    <b>Body Notes:</b>
+            </div>
+            --!>
+
+            <div class="paper" id=g1"> 
+                    <b>Paper Code:</b> G1
+                    <b>Title:</b> A Study on Music Genre Recognition and Classification Techniques
+                    <b>Author(s):</b> Aziz Nasridinov and Young-Ho Park
+                    <b>Date:</b> 2014
+                    <b>Pages:</b> 12
+                    <b>Data Source:</b>
+                    <b>Algorithms used:</b>
+                    <b>Formality rating:</b> 4/5
+                    <b>Interest rating:</b> 2/5
+                    <b>Genre:</b>(4) prehistoric time, middle age, renaissance, baroque, classic and modern
+
+                    <b>Intro Notes:</b>
+                    -Hidden Markov models are the most popular methods used in chord recognition
+                    <b>Body Notes:</b>
+                    -Proposed method: 
+                    a) Chord labeling (1s and 0s)
+                    b) A k-windowSubsequenceMatching algorithm used in order to find subsequence in music sequence.
+                    c) Decision tree for genere classification
+            </div>
+
+            <div class="paper" id="g2">
+                    <b>Paper Code:</b> G2
+                    <b>Title:</b> Improving the reliability of music genre classification using rejection and verification
+                    <b>Author(s):</b> Alessandro L. Koerich
+                    <b>Date:</b> 2013
+                    <b>Pages:</b> 6
+                    <b>Data Source:</b> Benchmark dataset ISMIR 2004, GTZAN [15], and LMD
+                    <b>Algorithms used:</b>
+                    Multi-class support vector machine (SVM) algorithm with one-against all strategy
+                    A multilayer perceptron neural network (MLP) trained with the backpropagation momentum algorithm.
+                    <b>Formality rating:</b> 4/5
+                    <b>Interest rating:</b> 4/5
+                    <b>Genre:</b>
+
+                    <b>Intro notes:</b>
+                    - Fu et al [2] provide a comprehensive review on audio-based classification and systematically 
+                    summarize the state-of-the-art techniques for music classification, stressing the difference 
+                    in the features and the types of classifiers used for different classification tasks such as 
+                    music genre classification, mood classification, artist identification, instrument recognition 
+                    and music annotation.
+                    <b>Body Notes:</b>
+                    - The feature extraction module uses the MARSYAS framework to extract seventeen audio features from 
+                    46ms frames of the audio signal with no overlap.
+                    - The baseline classification determines the genre with certain possibilities
+                    - The rejection system rejects classifications that are uncertain
+                    - The verification system reclassifies some of the rejected classifications based on the output of the 
+                    baseline classifier and confusion matrix
+            </div>
+
+            <div class="paper" id="g3">
+                    <b>Paper Code:</b> G3
+                    <b>Title:</b> Music Genre Classification Using Machine Learning Techniques
+                    <b>Author(s):</b> Sam Clark, Danny Park, Adrien Guerard
+                    <b>Date:</b> 2012
+                    <b>Pages:</b> 12
+                    <b>Data Source:</b> LastFM (manual) and Echonest audio_summary
+                    <b>Algorithms used:</b> Growing neural gas and neural networks
+                    <b>Formality rating:</b> 2/5
+                    <b>Interest rating:</b> 3/5
+                    <b>Genre:</b> classical, country, rap, and reggae
+
+                    <b>Intro notes:</b>
+                    <b>Body Notes:</b>
+                    - growing neural gas assists the neural network
+                    - 12 model vectors created by the GNG
+                    - Also a visualization made using Python
+            </div>
+
+    </div>
+    </body>
+</html>
+
