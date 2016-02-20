@@ -216,6 +216,38 @@
                     of averages of successive FFT vectors, average of envelope of the spectrum
                     - simple averaging approach outperforms the other approaches
             </div>
+
+            <div class="paper" id="g9">
+                    <b>Paper Code:</b> G9
+                    <b>Title:</b> Music Genre Classification
+                    <b>Author(s):</b> Michael Haggblade, Yang Hong, Kenny Kao
+                    <b>Date:</b>
+                    <b>Pages:</b> 5
+                    <b>Data Source:</b> GTZAN
+                    <b>Algorithms used:</b> k-NN, k-means, multi-class SVM, and neural networks
+                    <b>Formality rating:</b> 2/5
+                    <b>Interest rating:</b> 5/5
+                    <b>Genre:</b> classical, jazz, metal, and pop
+
+                    <b>Intro notes:</b>
+                    - relied purely on Mel Frequency Cepstral Coefficients (MFCC) to characterize the data
+                    <b>Body Notes:</b>
+                    - Kullback-Leibler divergence for distance in k-NN
+                    - For k-means:
+                    we chose to represent a centroid as if it were also a multi-variate Gaussian distribution 
+                    of an arbitrary song (which may not actually exist in the data set), and initialized the 
+                    four centroids as four random songs whose distances (as determined by KL divergence) were
+                    above a certain empirically determined threshold
+                    - we determined the iteration number empirically and repeatedly run k-means with different 
+                    random initial centroids and pick the best, as determined by the calculated total percent 
+                    accuracy
+                    - For Neural Networks;
+                    - pre-process the input data by combining the mean vector and the top half of the
+                    covariance matrix (since it is symmetric) into one feature vector
+                    -The simpler and more naive approaches, k-NN (supervised) and k-Means (unsupervised), 
+                    predictably did worse than the more sophisticated neural networks (supervised) and
+                    SVMs (unsupervised)
+            </div>
     </div>
     </body>
 </html>
