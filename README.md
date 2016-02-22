@@ -1,7 +1,7 @@
 #SarangiPapers
 
 All papers (research, reports, articles) collected as part of research for the [Sarangi project](https://github.com/lazymahendrathapa/Sarangi).
-Also includes Summary html files.
+Also includes separate Summary html files for [genre](https://rawgit.com/codingOtaku/SarangiPapers/master/Genre/Summary.html) and mood.
 
 ###Pdf Code Specification
 * G{number}: For documents related to Genre based Classification
